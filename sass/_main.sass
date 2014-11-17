@@ -1,97 +1,1064 @@
-// Normally mainpage styles
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//wrapper
+.wrapper
+	padding: 74px 0 0 0 
+	left: 0
+	position: relative
+.con
+	margin: 0 auto
+	width: 480px
+	+transition(transform 0.4s)
+	+transform(translateX(0px) translate3d(0,0,0))
+// header
+.header
+	position: fixed
+	top: 0
+	left: 0
+	right: 0 
+	height: 74px
+	padding: 12px 20px
+	background: #221f1f 
+	+clr
+	z-index: 9999
+.logo-btn
+	background: #00c7ff
+	width: 100%
+	height: 55px
+	margin: 20px auto 0
+	+vertical
+	display: block
+	position: relative
+	span 
+		+fn
+		+fs(20)
+		color: #fff
+		+ttu
+		display: inline-block
+		vertical-align: middle
+	img
+		width: 102px
+		height: 29px
+		display: inline-block
+		vertical-align: middle
+		margin-left: 20px
+	&:active
+		top: 1px
+.btn-menu
+	float: left
+	width: 50px
+	height: 50px
+	margin-right: 20px
+	+border-radius(4px)
+	background: #f1f1f1
+	font-size: 0
+	+user-select(none)
+	&.is-active
+		background: #2d97de
+		i
+			background: #fff
+			&:before, &:after
+				background: #fff 
+	i
+		display: inline-block
+		width: 28px
+		height: 4px
+		background: #6b6b6b
+		vertical-align: middle
+		position: relative
+		+border-radius(4px)
+		&:before, &:after
+			content: ""
+			display: block
+			width: 28px
+			height: 4px
+			background: #6b6b6b 
+			position: absolute
+			left: 0
+			right: 0
+			+border-radius(4px)
+		&:before
+			top: -10px
+		&:after
+			bottom: -10px
+
+.btn-search
+	float: right
+	width: 50px
+	height: 50px
+	margin-left: 15px
+	background: #4e4d4d
+	border-radius: 4px 
+	position: relative
+	+user-select(none)
+	&.is-active
+		background: #E5E5E5
+		.icon
+			color: #6B6B6B
+	.icon
+		font-size: 32px
+		color: #221f1f
+			
+.logo
+	float: left
+	+fs(16.06)
+	color: #9f9e9e 
+	position: relative
+	margin-top: 4px
+	+user-select(none)
+	line-height: 1.2
+	span
+		+georgia
+		display: block
+.logo-a42
+	float: right
+	+user-select(none)
+	display: none
+	.icon
+		font-size: 50px
+
+
+.search
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	padding: 12px 20px 12px 19px
+	background: #4e4d4d 
+	display: none
+	form
+		+vertical
+		text-align: left
+		+fs(0)
+		position: relative
+		display: block
+		padding: 0 63px 0 51px
+		max-width: 441px
+		margin: 0 auto
+	&__close
+		+svg(close, 27, 27)
+		position: absolute
+		top: 12px
+		left: 0
+	&__keyword
+		+f
+		color: #a3a3a3
+		+fs(20)
+		padding: 12px 10px
+		width: 100%
+		+box
+		+border-radius(4px)
+		&:focus
+			color: #000 
+	&__submit
+		position: absolute
+		top: 0
+		right: 0
+		width: 50px
+		height: 50px
+		margin-left: 13px
+		background: #25c4c7
+		border-radius: 4px 
+		&:hover
+			background: #13989b 
+		.icon
+			font-size: 32px
+			color: #fff
+
+
+.menu, .projects
+	position: fixed
+	top: 74px
+	left: 0
+	bottom: 0
+	background: #f3f3f3
+	+tr(left .4s)
+	overflow: auto
+	-webkit-overflow-scrolling: touch
+	z-index: 9999
+	padding-bottom: 20px
+	&.is-open
+		left: 0
+.menu
+	width: 310px
+	left: -100%
+	background: #fff
+	&__inner
+		width: 100%
+		overflow: auto
+	.menu__in
+		background: #FFF 
+		width: 100%
+	.menu__title
+		display: block
+		+fs(20)
+		+f
+		color: #1e1919 
+		margin-bottom: 15px
+	.menu__list
+		padding: 10px 0 15px
+		li
+			position: relative
+			width: 100%
+		a
+			+fs(24)
+			+georgia
+			line-height: 60px
+			color: #000000
+			display: block
+			padding: 0 20px 
+			&:hover
+				background: #221f1f
+				color: #ffffff  
+		&_mod
+			padding-bottom: 5px
+			li
+				padding: 5px 0
+			a
+				+fs(20)
+				line-height: 60px
+	hr
+		border: none
+		margin: 0 20px
+		border-top: 1px solid #bebdbd 
+	&__box
+		text-align: justify
+		+fs(0.1)
+		word-spacing: 0px
+		padding: 10px 23px 10px 20px 
+		&:after
+			content: ""
+			width: 100%
+			display: inline-block 
+	&__button
+		height: 52px
+		+vertical
+		display: inline-block
+		padding: 0 20px 
+		color: #ffffff
+		margin: 10px 0
+		background: #221f1f 
+		&_mod
+			width: 100%
+			margin: 30px 0 10px
+			padding: 0
+			i
+				background: url(../img/svg/monic-hov.svg) no-repeat 50% 50%
+				display: inline-block
+				vertical-align: middle
+				width: 46px
+				height: 35px 
+				margin-right: 15px
+		span
+			+fs(13.05)
+			letter-spacing: 0.075em 
+			+georgia
+			+ttu
+			display: inline-block
+			vertical-align: middle
+		&:hover
+			background: #2d97de
+			color: #fff  
+			i
+				background: url(../img/svg/monic-hov.svg) no-repeat 50% 50%
+	&__buttons-in
+		padding: 10px 23px 20px 20px
+	&__link
+		+svg(soc-bg, 58, 65)
+		+vertical
+		display: inline-block
+		vertical-align: top
+		i
+			display: inline-block
+			vertical-align: middle
+			&.is-vk
+				+svg(vk-hov, 15, 19)
+				background-size: cover
+			&.is-fb
+				+svg(fb-hov, 11, 23)
+				background-size: cover
+			&.is-twitter
+				+svg(twitter-hov, 22, 19)
+				background-size: cover
+			&.is-od
+				+svg(od-hov, 15, 22)
+				background-size: cover
+		&:hover
+			+svg(soc-bg-hov, 58, 65)
+	&__footer
+		padding: 0 20px
+	&__copy
+		+fs(16)
+		color: #727272
+		line-height: 25px
+		position: relative
+		margin: 2px
+		&:before
+			position: absolute
+			content: "©"
+			top: 0
+			left: -15px
+			+fs(14)
+	&__made
+		+fs(16)
+		color: #727272
+		line-height: 60px
+		i
+			display: inline-block
+			+svg(wow, 51, 14)
+
+.projects
+	max-width: 480px
+	width: 100%
+	// +transform(translateX(-480px))
+	left: -100%
+	&__inner
+		//height: 100%
+		overflow: auto
+	.projects__head
+		padding: 12px 20px 12px 80px
+		+clr
+		background: #fff 
+		+r(440)
+			padding-left: 40px
+	.projects__title
+		float: left
+		font-size: 35px
+		+fn
+		+fs(35)
+		color: #00C7FF
+	.projects__close
+		float: right
+		margin-top: 11px
+		font-size: 0
+		.icon
+			font-size: 22px
+			color: #D7D7D7 
+	.projects__type
+		position: relative
+		padding: 7px 10px 7px 80px
+		color: #FFF
+		font-size: 35px	
+		cursor: pointer
+		background: #00c7ff 
+		+fn
+		+r(440)
+			padding-left: 40px
+		&.is-active
+			background: #000 
+			.icon
+				top: 12px
+				+rotate(180)
+		.icon
+			position: absolute
+			top: 15px
+			left: 40px
+			font-size: 30px
+			+r(440)
+				left: 10px
+	.projects__list
+		display: none
+		padding: 0 20px
+		background: #fff 
+		li
+			border-top: 1px solid #d7d7d7
+			&:first-child
+				border: none
+		a
+			display: block
+			margin: 0 -20px
+			padding: 17px 20px 17px 80px
+			font-size: 20px
+			font-weight: 700 
+			+f
+			color: #000
+	&__footer
+		padding: 20px
+	&__buttons
+		display: block
+	&__button
+		margin: 10px
+		+border-radius(4px)
+		height: 60px
+		padding: 0 20px
+		+fn
+		+fs(35)
+		color: #fff
+		position: relative
+		&:hover
+			background-color: #221f1f 
+		&:active
+			top: 1px
+		span
+			background: url(../img/svg/bubble.svg) no-repeat 51% 50%
+			width: 33px
+			height: 36px 
+			+f
+			font-weight: 700 
+			+fs(18)
+			display: inline-block
+			vertical-align: middle
+			margin-left: 19px
+	&__profile
+		background-color: #6B6B6B
+	&__enter
+		background-color: #ccc
+	&__bottom
+		text-align: left
+		padding: 20px 0 0 0 
+	&__copy
+		+fs(16)
+		line-height: 25px
+		color: #727272
+		+f 
+		position: relative
+		margin: 2px
+		&:before
+			position: absolute
+			content: "©"
+			top: 0
+			left: -15px
+			+fs(14)
+	&__logo
+		display: block
+		width: 104px 
+		height: 29px
+		margin: 2px 3px 13px 3px
+		img
+			width: 100%
+	&__years
+		float: right
+		+fs(25)
+		color: #6b6b6b
+		+fn 
+
+
+
+
+
+
+
+//PAGE INFO
+.con
+	+clr
+.image
+	width: 100%
+	height: 100%
+	position: relative
+	+clr
+	img
+		float: left
+		width: 100%
+		height: 100%
+	a
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		padding: 20px 55px 25px 22px
+		+georgia
+		+fs(20)
+		line-height: 25px
+		color: #ffffff
+		background: rgba(0, 0, 0, 0.6) 
+.items
+	padding: 30px 20px
+.item
+	padding: 15px 0 
+	+clr
+	&__img
+		position: relative
+		float: left
+		width: 200px
+		margin-right: 20px
+		+clr
+	img
+		width: 100%
+		float: left
+	&__text
+		display: table
+	&__link
+		+fs(20)
+		line-height: 1.25
+		color: #000000
+		+georgia
+		display: inline-block
+		&:hover
+			color: #ea4b35 
+	&__title
+		+fs(20)
+		+georgia
+		color: #2d97de
+		line-height: 1 
+		display: block
+		margin-bottom: 10px
+		&:hover
+			color: #ea4b35 
+	&__btns
+		position: absolute
+		top: 10px
+		left: 5px
+		+fs(0.1)
+		.btn-player
+			margin: 0 5px
+	&_big
+		padding: 15px 0 33px
+		.item__img
+			width: 100%
+			margin-bottom: 10px
+		.item__text
+			width: 100%
+			display: block
+	&_mod
+		border-top: 1px solid #bebdbd
+	hr
+		border: none
+		border-bottom: 1px solid #bebdbd  
+		margin: 0
+	&__date
+		+fs(16)
+		line-height: 24.46px
+		+georgia
+		color: #a8a8a8
+		display: block
+		margin: 0 0 5px 0   
+.recommend
+	padding: 0 20px 35px 20px
+	&__item
+		+fs(16)
+		+georgia
+		line-height: 25ox
+		p
+			color: #000000 
+			display: table
+		hr
+			border: none
+			border-bottom: 1px solid #bebdbd  
+			margin: 0
+	&__left
+		float: left
+		color: #221f1f
+		font-weight: bold 
+		width: 160px
+		padding: 0 20px 0 2px
+	&__info
+		+clr
+		padding: 15px 0 0 0
+		height: 100px
+		overflow: hidden
+		
+.list
+	padding: 0 0 20px 0
+	li
+		padding: 15px 0
+	a
+		padding: 0 0 0 30px
+		display: inline-block
+		position: relative
+		+fs(20)
+		line-height: 25px
+		+georgia
+		color: #000000 
+		&:before
+			content: ""
+			position: absolute
+			top: 7px
+			left: 0
+			width: 10px
+			height: 10px
+			+border-radius(50%)
+			background: #2d97de 
+		&:hover
+			color: #ea4b35
+			&:before
+				background: #ea4b35 
+
+
+.footer
+	padding: 20px 20px 30px
+	background: #f2f2f2
+.logo_bot
+	+s(logo-bot)
+	display: inline-block
+	margin-bottom: 15px
+.copyright
+	p
+		+georgia
+		+fs(16)
+		line-height: 1.25
+		color: #737373
+
+
+
+//rubric
+.rubric
+	.recommend
+		padding: 20px 20px 20px 20px
+	.heading
+		margin-bottom: 25px
+	&__inner
+		padding: 10px 20px 0
+	.items
+		.heading
+			margin-bottom: 15px
+.news
+	img
+		width: 100%
+		margin-bottom: 17px 
+	&__topper
+		text-align: justify
+		+fs(0.1)
+		word-spacing: 0px
+		padding: 0 20px
+		margin-bottom: 17px
+		&:after
+			content: ""
+			width: 100%
+			display: inline-block 
+	&__title
+		+fs(20)
+		line-height: 20px
+		+georgia
+		color: #2d97de
+		display: inline-block
+		vertical-align: middle
+		&:hover
+			color: #ea4b35 
+	&__date
+		+fs(16)
+		line-height: 24.46px
+		+georgia
+		color: #a8a8a8
+		display: inline-block
+		vertical-align: middle 
+	&__info
+		padding: 0 20px
+	&__heading
+		display: inline-block
+		+fs(24)
+		+georgia
+		font-weight: bold
+		color: #000
+		line-height: 40px 
+		margin-bottom: 15px
+	p
+		+fs(20)
+		+georgia
+		color: #27333a
+		line-height: 30px
+		margin: 0 0 20px 0 
+		a
+			color: #2d97de
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+		&.italic
+			font-style: italic
+
+.footnote
+	padding: 25px 20px 25px
+	background: #f2f2f2 
+	margin-bottom: 28px
+	p
+		+fs(16)
+		line-height: 25px
+		color: #27333a
+		+georgia 
+		clear: both
+	.profile
+		margin-bottom: 30px
+.profile
+	text-align: left
+	+clr
+	&__avatar
+		width: 70px
+		height: 70px
+		+border-radius(50%)
+		overflow: hidden
+		position: relative
+		float: left
+		img
+			width: 100%
+			position: absolute
+			top: 0
+			left: 0
+	&__info
+		padding-left: 90px 
+		+vertical
+		text-align: left
+		color: #a3a3a3
+		height: 70px
+		span
+			+fs(16)
+			line-height: 20px
+			+georgia
+			display: inline-block
+			vertical-align: middle
+	&__name
+		color: #000 
+.text
+	margin-bottom: 22px 
+	padding-right: 10px
+	p
+		+fs(20)
+		line-height: 30px
+		+georgia
+		color: #27333a
+		 
+.quote
+	position: relative
+	padding: 3px 30px 30px 45px 
+	p
+		+fs(16)
+		line-height: 25px
+		+georgia
+		color: #2d97de
+	i
+		+svg(quote, 27, 21)
+		position: absolute
+		top: 0
+		left: 0
+
+.number
+	margin: 10px 0 0 0
+	float: left
+	+clr 
+	&__head
+		display: block
+		margin: 0 auto 16px
+		width: 34px
+		height: 34px
+		border: 2px solid #221f1f 
+		+vertical
+		+border-radius(50%)
+		span
+			display: inline-block
+			vertical-align: middle
+			font-family: Verdana, Arial, sans-serif
+			+fs(18)
+			font-weight: bold 
+			color: #27333a 
+	p
+		+fs(20)
+		line-height: 30px
+		color: #27333a 
+		+georgia
+		margin-bottom: 30px
+	&__title
+		+fs(16)
+		+georgia
+		line-height: 30px
+		color: #a3a3a3
+		margin-bottom: 18px
+		display: block
+	img
+		margin-bottom: 5px
+
+
+.dialog
+	p
+		+fs(20)
+		line-height: 30px
+		+georgia
+		margin-bottom: 10px
+	&__first
+		color: #a8a8a8
+	&__second
+		color: #27333a 
+
+.ad
+	margin-bottom: 35px
+	&__title
+		+fs(20)
+		line-height: 30px
+		color: #27333a
+		+georgia 
+		margin-bottom: 5px
+		display: block
+	.list
+		li
+			padding: 5px 0
+			a
+				line-height: 30px
+	h3
+		+fs(20)
+		line-height: 40px
+		color: #000000
+		+georgia
+		font-weight: bold
+	p
+		+fs(20)
+		+georgia
+		line-height: 30px
+		color: #27333a
+	img
+		margin-bottom: 20px
+	h3
+		margin-bottom: 15px
+
+
+.share
+	+fs(0.1)
+	+clr
+	padding: 20px 0 16px
+	&__title
+		+fs(13)
+		line-height: 1.4
+		color: #a3a3a3
+		letter-spacing: 0.075em
+		+georgia
+		+ttu  
+		display: block
+		margin-bottom: 15px
+	&__link
+		+svg(soc-bg, 58, 65)
+		+vertical
+		display: inline-block
+		vertical-align: top
+		margin-right: 20px
+		i
+			display: inline-block
+			vertical-align: middle
+			&.is-vk
+				+svg(vk-hov, 15, 19)
+				background-size: cover
+			&.is-fb
+				+svg(fb-hov, 11, 23)
+				background-size: cover
+			&.is-twitter
+				+svg(twitter-hov, 22, 19)
+				background-size: cover
+			&.is-od
+				+svg(od-hov, 15, 22)
+				background-size: cover
+		&:hover
+			+svg(soc-bg-hov, 58, 65)
+	textarea
+		resize: none
+		width: 100%
+		+box
+		border: 3px solid #d7d7d7
+		padding: 8px
+		+fs(20)
+		line-height: 25px
+		+georgia
+		line-height: 25px
+		height: 124px
+		margin-bottom: 20px
+		+retina
+			border: 2px solid #d7d7d7
+		&:focus
+			border-color: #2d97de 
+	&__submit
+		width: 133px
+		height: 52px
+		background-color: #221F1F
+		+fs(13.05)
+		+georgia
+		+ttu
+		letter-spacing: 0.075em 
+		color: #fff
+		float: right
+		&:hover
+			background: #2d97de 
+
+.comment
+	padding-top: 20px 
+	&_mod
+		border-top: 1px solid #d1d1d1
+		margin-left: 30px
+	.profile
+		margin-bottom: 15px
+	p
+		+fs(16)
+		line-height: 20px
+		color: #505050
+		+georgia
+		margin-bottom: 20px
+	&__bottom
+		text-align: justify
+		+fs(0.1)
+		word-spacing: 0px
+		padding-bottom: 20px
+		&:after
+			content: ""
+			width: 100%
+			display: inline-block 
+	&__link
+		display: inline-block
+		vertical-align: middle
+		span
+			+fs(16)
+			line-height: 20px
+			color: #2d97de
+			text-decoration: underline
+			+georgia
+			font-style: italic 
+		&:hover
+			span
+				text-decoration: none
+	&__buttons
+		display: inline-block
+		vertical-align: middle
+		+vertical
+		width: 190px
+		text-align: justify
+		+fs(0.1)
+		word-spacing: 0px
+		&:after
+			content: ""
+			width: 100%
+			display: inline-block 
+	&__button
+		+vertical
+		display: inline-block
+		vertical-align: middle
+		width: 81px
+		text-align: left
+		a
+			display: inline-block
+			width: 42px
+			height: 42px
+			border: 2px solid #221f1f
+			+border-radius(50%)
+			+vertical
+			margin-right: 10px
+			i
+				display: inline-block
+				vertical-align: middle
+		span
+			+fs(20)
+			+georgia
+			color: #a7a7a7
+			display: inline-block
+			vertical-align: middle 
+			line-height: 1
+	&__up
+		i
+			+svg(btn-up, 19, 19)
+		&:hover
+			a
+				background: #2d97de
+				border-color: #2d97de
+			i
+				+svg(btn-up-hov, 19, 19)
+			span
+				color: #2d97de 
+	&__down
+		i
+			+svg(btn-down, 19, 19)
+		&:hover
+			a
+				background: #ea4b35
+				border-color: #ea4b35
+			i
+				+svg(btn-down-hov, 19, 19)
+			span
+				color: #ea4b35 
+
+.video
+	+clr
+	margin-bottom: 20px
+	iframe
+		float: left
+
+
+.audio-player
+	width: 100%
+	padding: 20px
+	background: #e5e5e5 
+	position: relative
+	+vertical
+	+border-radius(5px)
+	margin-bottom: 40px
+	text-align: left
+.mejs-playpause-button, .mejs-volume-button
+	width: 40px
+	height: 40px
+	+vertical
+	background: #221f1f  
+	cursor: pointer
+	display: inline-block 
+	vertical-align: middle
+	margin-right: 20px
+	&:hover
+		background: #2d97de 
+.mejs-mute, .mejs-unmute
+	text-align: left
+.mejs-mute button, .mejs-unmute button
+	margin-left: 9px 
+.mejs-unmute
+	background: #ea4b35 
+	&:hover
+		background: #ea4b35 
+.mejs-play button, .mejs-pause button, .mejs-mute button, .mejs-unmute button
+	display: inline-block
+	vertical-align: middle
+.mejs-play button
+	+svg(btn-play, 14, 16)
+.mejs-pause button
+	+svg(pause, 14, 16)
+.mejs-mute button 
+	width: 40px
+	height: 40px
+	background-color: #221f1f 
+	margin: 0
+	position: relative
+	&:before
+		content: "" 
+		position: absolute
+		top: 50%
+		left: 9px
+		margin-top: -10px
+		+svg(sound, 20, 20)
+.mejs-unmute button
+	width: 40px
+	height: 40px
+	background-color: #ea4b35 
+	margin: 0
+	position: relative
+	&:before
+		content: "" 
+		position: absolute
+		top: 50%
+		left: 9px
+		margin-top: -10px
+		+svg(mute, 25, 20) 
+.mejs-time-rail
+	width: 280px !important
+	display: inline-block
+	vertical-align: middle
+	background: #a7a7a7
+	position: absolute
+	top: 30px
+	right: 20px
+.mejs-time-total
+	display: inline-block
+	vertical-align: middle
+	position: relative
+	height: 20px
+	width: 100% !important
+.mejs-time-loaded
+	width: 100%
+	height: 20px
+	
+// .mejs-horizontal-volume-slider 
+// 	position: absolute
+// 	top: 0
+// 	left: 0
+.mejs-time-current 
+	position: absolute
+	width: 0
+	height: 20px
+	top: 0px
+	left: 0px
+	background: #2d97de
+
+.mejs-time-handle 
+	position: absolute
+	display: block
+	width: 20px
+	height: 20px
+	top: 0px
+	background: none
 
 
 

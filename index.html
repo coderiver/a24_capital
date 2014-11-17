@@ -3,19 +3,290 @@
 <head>
 	<meta charset="utf-8">
 	<title>Template</title>
-	<meta name="viewport" content="initial-scale=1">
-	<meta name="format-detection" content="telephone=no">
-	<!-- <meta name="viewport" content="width=1200"> -->
-	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
-	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<meta name="viewport" content="width=480, user-scalable=no"/> <!--Для всех остальных, выключить это когда андроид-->
+	<!-- <meta name="viewport" content="initial-scale=1.0, width=480, target-densitydpi=device-dpi, user-scalable=no" /> --> <!--Для Android, включить это когда андроид-->
+	<link rel="stylesheet" media="all" href="css/screen.css">
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
-<body>
-<!-- BEGIN  out-->
-<div class="out">
+<body class="js-container">
 
+<div class="image">
+	<img src="http://placehold.it/480x596" alt="">
+	<a href="#">В Сбербанке Сибири сократились вклады и счета компаний</a>
 </div>
-<!-- END out-->
+<!-- wrapper -->
+<div class="wrapper">
+	<!-- header -->
+	<header class="header">
+		<!-- btn-menu -->
+		<button class="btn-menu js-btn-menu"><i></i></button>
+		<!-- logo -->
+		<a class="logo" href="#"><img src="img/logo.svg" alt=""><span>бизнес-журнал A42.ru</span></a>
+		<!-- btn-search -->
+		<button class="btn-search js-btn-search"><i class="icon icon-search"></i></button>
+		<!-- begin search  -->
+		<div class="search js-search">
+			<form action="">
+				<a href="#" class="search__close"></a>
+				<input type="text" class="search__keyword" value="Например, огуречная диета" onfocus="if (this.value=='Например, огуречная диета') this.value='';" onblur="if (this.value==''){this.value='Например, огуречная диета'}">
+				<button class="search__submit"><i class="icon icon-search"></i></button>
+			</form>
+		</div>
+		<!-- end search -->
+		<!-- logo-a42 -->
+		<button class="logo-a42 js-btn-projects"><img src="img/svg/a42.svg" alt=""></button>
+	</header>
+	<!-- menu -->
+	<div class="menu js-menu">
+		<div class="menu__inner">
+			<div class="menu__in">
+				<ul class="menu__list">
+					<li><a href="#">Деловые новости</a></li>
+					<li><a href="#">Деньги</a></li>
+					<li><a href="#">Точки роста</a></li>
+					<li><a href="#">Опыт</a></li>
+					<li><a href="#">Проекты</a></li>
+				</ul>
+				<hr>
+				<ul class="menu__list menu__list_mod">
+					<li><a href="#">Советы</a></li>
+					<li><a href="#">Стартапы</a></li>
+					<li><a href="#">Лидерство</a></li>
+				</ul>
+			</div>
+			<div class="menu__buttons">
+				<div class="menu__box menu__buttons-in">
+					<button class="menu__button"><span>Вход</span></button>
+					<button class="menu__button"><span>регистрация</span></button>
+					<a href="#" class="menu__button menu__button_mod"><i></i><span>основная версия</span></a>
+				</div>
+				<hr>
+				<div class="menu__box">
+					<button class="logo-btn js-btn-projects"><span>Все проекты</span><img src="img/svg/a42-small-btn.svg" alt=""></button>
+				</div>
+				<div class="menu__box">
+					<span class="menu__title">Присоединяйтесь к нам</span>
+					<a href="#" class="menu__link"><i class="is-vk"></i></a>
+					<a href="#" class="menu__link"><i class="is-fb"></i></a>
+					<a href="#" class="menu__link"><i class="is-twitter"></i></a>
+					<a href="#" class="menu__link"><i class="is-od"></i></a>
+				</div>
+				<div class="menu__footer">
+					<span class="menu__title">16+</span>
+					<p class="menu__copy">A42.RU, 2007–2014 <br>
+					Сайт не является частью <br>
+					зарегистрированного СМИ <br>
+					Эл № ФС 77 - 45324</p>
+					<p class="menu__made">разработка сайта — <a href="#"><i></i></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- projects -->
+	<div class="projects js-projects">
+		<div class="projects__inner">
+			<div class="projects__head">
+				<div class="projects__title">Проекты А42.RU</div>
+				<button class="projects__close">
+					<i class="icon icon-cancel"></i>
+				</button>
+			</div>
+			<div class="projects__in">
+				<div class="projects__item">
+					<div class="projects__type">СМИ <i class="icon icon-down-open"></i></div>
+					<ul class="projects__list">
+						<li><a href="#">Афиша</a></li>
+						<li><a href="#">Дороги</a></li>
+						<li><a href="#">Недвижимость</a></li>
+						<li><a href="#">Работа</a></li>
+						<li><a href="#">Форум</a></li>
+					</ul>
+				</div>
+				<div class="projects__item">
+					<div class="projects__type">Город <i class="icon icon-down-open"></i></div>
+					<ul class="projects__list">
+						<li><a href="#">Афиша</a></li>
+						<li><a href="#">Дороги</a></li>
+						<li><a href="#">Недвижимость</a></li>
+						<li><a href="#">Работа</a></li>
+						<li><a href="#">Форум</a></li>
+					</ul>
+				</div>
+				<div class="projects__item">
+					<div class="projects__type">Сервисы <i class="icon icon-down-open"></i></div>
+					<ul class="projects__list">
+						<li><a href="#">Афиша</a></li>
+						<li><a href="#">Дороги</a></li>
+						<li><a href="#">Недвижимость</a></li>
+						<li><a href="#">Работа</a></li>
+						<li><a href="#">Форум</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="projects__footer">
+				<div class="projects__buttons">
+					<button class="projects__button projects__profile">Мой профиль<span>12</span></button>
+					<button class="projects__button projects__enter">Выход</button>
+				</div>
+				<div class="projects__buttons">
+					<button class="projects__button projects__profile">Вход</button>
+					<button class="projects__button projects__profile">Регистрация</button>
+				</div>
+				<div class="projects__bottom">
+					<span class="projects__years">16+</span>
+					<a href="#" class="projects__logo"><img src="img/svg/a42-small.svg" alt=""></a>
+					<p class="projects__copy"> A42.RU, 2007–2014 <br>
+					Сайт не является частью зарегистрированного СМИ <br>
+					Эл № ФС 77 - 45324</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- begin con  -->
+	<div class="con">
+		<div class="items">
+			<div class="item">
+				<div class="item__img">
+					<img src="http://placehold.it/200x130" alt="">
+				</div>
+				<div class="item__text">
+					<a href="#" class="item__title">Деловые новости</a>
+					<a href="#" class="item__link">Кредиторы шахты «Зенковская» меняют управляющего</a>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item__img">
+					<img src="http://placehold.it/200x130" alt="">
+					<div class="item__btns">
+						<a href="#" class="btn-player btn-vol"><i></i></a>
+						<a href="#" class="btn-player btn-play"><i></i></a>
+					</div>
+				</div>
+				<div class="item__text">
+					<a href="#" class="item__title">Деньги</a>
+					<a href="#" class="item__link">Сбербанк реструктурирует долг компании «Заречная»</a>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item__img">
+					<img src="http://placehold.it/200x130" alt="">
+				</div>
+				<div class="item__text">
+					<a href="#" class="item__title">Точки роста</a>
+					<a href="#" class="item__link">Угольщики и металлурги сократили работников в Кузбассе</a>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item__img">
+					<img src="http://placehold.it/200x130" alt="">
+				</div>
+				<div class="item__text">
+					<a href="#" class="item__title">Деловые новости</a>
+					<a href="#" class="item__link">В Кемерове стартует первый этап конкурса «Мисс Авиатор 2014»</a>
+				</div>
+			</div>
+		</div>
+		<div class="recommend">
+			<div class="heading"><span>Рекомендуем посетить</span></div>
+			<div class="recommend__item">
+				<div class="recommend__info">
+					<span class="recommend__left">24 – 25 июля Кемерово</span>
+					<p>Тренинг специалиста <br>по маркетингу Светланы Стерховой</p>
+				</div>
+				<hr>
+			</div>
+			<div class="recommend__item">
+				<div class="recommend__info">
+					<span class="recommend__left">30 – 31 октября Кемерово</span>
+					<p>Летний интенсив «Технология уверенных переговоров и продаж»</p>
+				</div>
+				<hr>
+			</div>
+			<div class="recommend__item">
+				<div class="recommend__info">
+					<span class="recommend__left">1 – 4 января Кемерово</span>
+					<p>Семинар «Модернизация законодательства о юридических лицах»</p>
+				</div>
+				<hr>
+			</div>
+			<div class="recommend__item">
+				<div class="recommend__info">
+					<span class="recommend__left">31 июля Красноярск</span>
+					<p>Авторский бизнес-тренинг Станислава Кузавова</p>
+				</div>
+			</div>
+			<div class="item item_big">
+				<div class="item__img">
+					<img src="http://placehold.it/440x290" alt="">
+					<div class="item__btns">
+						<a href="#" class="btn-player btn-vol"><i></i></a>
+					</div>
+				</div>
+				<div class="item__text">
+					<a href="#" class="item__title">Опыт</a>
+					<a href="#" class="item__link">Кузбасс попал в программу развития агломераций минрегиона</a>
+				</div>
+			</div>
+			<div class="item item_big item_mod">
+				<div class="item__text">
+					<a href="#" class="item__title">Статьи</a>
+					<a href="#" class="item__link">Ученые КузГТУ назвали инвестиции КРУ неэффективными</a>
+				</div>				
+			</div>
+			<div class="item">
+				<div class="item__img">
+					<img src="http://placehold.it/200x130" alt="">
+					<div class="item__btns">
+						<a href="#" class="btn-player btn-play"><i></i></a>
+					</div>
+				</div>
+				<div class="item__text">
+					<a href="#" class="item__title">Деньги</a>
+					<a href="#" class="item__link">Сбербанк реструктурирует долг компании «Заречная»</a>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item__img">
+					<img src="http://placehold.it/200x130" alt="">
+				</div>
+				<div class="item__text">
+					<a href="#" class="item__title">Точки роста</a>
+					<a href="#" class="item__link">Угольщики и металлурги сократили работников в Кузбассе</a>
+				</div>
+			</div>
+		</div>
+		<div class="recommend">
+			<div class="heading"><span>Деловые новости</span></div>
+			<ul class="list">
+				<li><a href="#">Кузбасс попал в программу развития агломераций минрегиона</a></li>
+				<li><a href="#">Угольщики и металлурги сократили работников в Кузбассе</a></li>
+				<li><a href="#">Кредиторы шахты «Зенковская» меняют управляющего</a></li>
+			</ul>
+			<div class="item item_big item_mod">
+				<div class="item__text">
+					<a href="#" class="item__title">Опыт</a>
+					<a href="#" class="item__link">Кузбасс попал в программу развития агломераций минрегиона</a>
+				</div>				
+			</div>
+			<div class="item item_big item_mod">
+				<div class="item__text">
+					<a href="#" class="item__title">Деловые новости</a>
+					<a href="#" class="item__link">Суд вновь рассмотрит покупку «Сибцемом» активов в Турции</a>
+				</div>				
+			</div>
+		</div>
+		<div class="more">
+			<a href="#"></a>
+		</div>
+	</div>
+	<!-- end con -->
+</div>
+<footer class="footer">
+	<a href="#" class="logo_bot"></a>
+	<div class="copyright"><p>© a42.ru, 2007—2014 <br>
+Сайт не является частью зарегистрированного СМИ <br>
+Эл № ФС 77 — 45324</p></div>
+</footer>
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>

@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<meta name="viewport" content="width=480, user-scalable=no"/> <!--Для всех остальных, выключить это когда андроид-->
+	<!-- <meta name="viewport" content="initial-scale=1.0, width=480, target-densitydpi=device-dpi, user-scalable=no" /> --> <!--Для Android, включить это когда андроид-->
+	<link rel="stylesheet" media="all" href="css/screen.css">
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body class="js-container">
+<!-- wrapper -->
+<div class="wrapper">
+	<!-- header -->
+	<header class="header">
+		<!-- btn-menu -->
+		<button class="btn-menu js-btn-menu"><i></i></button>
+		<!-- logo -->
+		<a class="logo" href="#"><img src="img/logo.svg" alt=""><span>бизнес-журнал A42.ru</span></a>
+		<!-- btn-search -->
+		<button class="btn-search js-btn-search"><i class="icon icon-search"></i></button>
+		<!-- begin search  -->
+		<div class="search js-search">
+			<form action="">
+				<a href="#" class="search__close"></a>
+				<input type="text" class="search__keyword" value="Например, огуречная диета" onfocus="if (this.value=='Например, огуречная диета') this.value='';" onblur="if (this.value==''){this.value='Например, огуречная диета'}">
+				<button class="search__submit"><i class="icon icon-search"></i></button>
+			</form>
+		</div>
+		<!-- end search -->
+		<!-- logo-a42 -->
+		<button class="logo-a42 js-btn-projects"><img src="img/svg/a42.svg" alt=""></button>
+	</header>
+	<!-- menu -->
+	<div class="menu js-menu">
+		<div class="menu__inner">
+			<div class="menu__in">
+				<ul class="menu__list">
+					<li><a href="#">Деловые новости</a></li>
+					<li><a href="#">Деньги</a></li>
+					<li><a href="#">Точки роста</a></li>
+					<li><a href="#">Опыт</a></li>
+					<li><a href="#">Проекты</a></li>
+				</ul>
+				<hr>
+				<ul class="menu__list menu__list_mod">
+					<li><a href="#">Советы</a></li>
+					<li><a href="#">Стартапы</a></li>
+					<li><a href="#">Лидерство</a></li>
+				</ul>
+			</div>
+			<div class="menu__buttons">
+				<div class="menu__box menu__buttons-in">
+					<button class="menu__button"><span>Вход</span></button>
+					<button class="menu__button"><span>регистрация</span></button>
+					<a href="#" class="menu__button menu__button_mod"><i></i><span>основная версия</span></a>
+				</div>
+				<hr>
+				<div class="menu__box">
+					<button class="logo-btn js-btn-projects"><span>Все проекты</span><img src="img/svg/a42-small-btn.svg" alt=""></button>
+				</div>
+				<div class="menu__box">
+					<span class="menu__title">Присоединяйтесь к нам</span>
+					<a href="#" class="menu__link"><i class="is-vk"></i></a>
+					<a href="#" class="menu__link"><i class="is-fb"></i></a>
+					<a href="#" class="menu__link"><i class="is-twitter"></i></a>
+					<a href="#" class="menu__link"><i class="is-od"></i></a>
+				</div>
+				<div class="menu__footer">
+					<span class="menu__title">16+</span>
+					<p class="menu__copy">A42.RU, 2007–2014 <br>
+					Сайт не является частью <br>
+					зарегистрированного СМИ <br>
+					Эл № ФС 77 - 45324</p>
+					<p class="menu__made">разработка сайта — <a href="#"><i></i></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- projects -->
+	<div class="projects js-projects">
+		<div class="projects__inner">
+			<div class="projects__head">
+				<div class="projects__title">Проекты А42.RU</div>
+				<button class="projects__close">
+					<i class="icon icon-cancel"></i>
+				</button>
+			</div>
+			<div class="projects__in">
+				<div class="projects__item">
+					<div class="projects__type">СМИ <i class="icon icon-down-open"></i></div>
+					<ul class="projects__list">
+						<li><a href="#">Афиша</a></li>
+						<li><a href="#">Дороги</a></li>
+						<li><a href="#">Недвижимость</a></li>
+						<li><a href="#">Работа</a></li>
+						<li><a href="#">Форум</a></li>
+					</ul>
+				</div>
+				<div class="projects__item">
+					<div class="projects__type">Город <i class="icon icon-down-open"></i></div>
+					<ul class="projects__list">
+						<li><a href="#">Афиша</a></li>
+						<li><a href="#">Дороги</a></li>
+						<li><a href="#">Недвижимость</a></li>
+						<li><a href="#">Работа</a></li>
+						<li><a href="#">Форум</a></li>
+					</ul>
+				</div>
+				<div class="projects__item">
+					<div class="projects__type">Сервисы <i class="icon icon-down-open"></i></div>
+					<ul class="projects__list">
+						<li><a href="#">Афиша</a></li>
+						<li><a href="#">Дороги</a></li>
+						<li><a href="#">Недвижимость</a></li>
+						<li><a href="#">Работа</a></li>
+						<li><a href="#">Форум</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="projects__footer">
+				<div class="projects__buttons">
+					<button class="projects__button projects__profile">Мой профиль<span>12</span></button>
+					<button class="projects__button projects__enter">Выход</button>
+				</div>
+				<div class="projects__buttons">
+					<button class="projects__button projects__profile">Вход</button>
+					<button class="projects__button projects__profile">Регистрация</button>
+				</div>
+				<div class="projects__bottom">
+					<span class="projects__years">16+</span>
+					<a href="#" class="projects__logo"><img src="img/svg/a42-small.svg" alt=""></a>
+					<p class="projects__copy"> A42.RU, 2007–2014 <br>
+					Сайт не является частью зарегистрированного СМИ <br>
+					Эл № ФС 77 - 45324</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- begin con  -->
+	<div class="con">
+		<div class="rubric">
+			<div class="news">
+				<img src="http://placehold.it/480x300" alt="">
+				<div class="news__topper">
+					<a href="#" class="news__title">Деловые новости</a>
+					<span class="news__date">12 июля</span>
+				</div>
+				<div class="news__info">
+					<a href="#" class="news__heading">Суд отклонил доводы <br>«Олимп-Плазы» о символике олимпиады</a>
+					<p class="italic">Бизнес-центр «Олимп-Плаза» в Кемерове, оштрафованный управлением федеральной антимонопольной службы за нарушение закона о защите конкуренции, проиграл спор о признании решения ведомства недействительным. </p>
+					<p>Проект раскрытия данных о налогах и сборах в регионах для чиновников на местах поддержала правительственная комиссия по законопроектной деятельности, пишет <a href="#">РБК</a>.</p>
+				</div>
+			</div>
+			<div class="rubric__inner">
+				<div class="footnote">
+					<div class="profile">
+						<a href="#" class="profile__avatar"><img src="http://placehold.it/70x70" alt=""></a>
+						<div class="profile__info"><span>Александр Пономарев, психолог экономист</span></div>
+					</div>
+					<p>Профессиональный финансист, со своим уникальным опытом и объемным взглядом по теме инвестиций</p>
+				</div>
+				<div class="text">
+					<p>Минфин предлагает дать чиновникам субъектов право получать от налоговых органов сведения, составляющие налоговую тайну. Согласно данным собеседников деловых изданий, экспертное сообщество ожидает утечек информации о бизнесе в пользу следователей по налоговым делам и мошенников.</p>
+				</div>
+				<div class="quote">
+					<i></i>
+					<p>Я с детства ненавидела уроки физкультуры в школе! Не понимала, зачем это нужно — бежать 9 кругов по школьному стадиону, чтобы потом у тебя все кололо, болело и язык на плече лежал. А в институте с первого курса захотелось позаниматься чем-нибудь интересным. В итоге: степ-аэробика, аква-аэробика, немного бега, тренажерные залы, занятия по пластике.</p>
+				</div>
+				<div class="text">
+					<p>Финансисты региональных администраций <br>и муниципалитетов могут получить сведения <br>о налогоплательщиках. Пока доступ <br>к налоговой тайне имеет лишь ФНС, Таможенная служба и внебюджетные фонды.</p>
+				</div>
+				<div class="number">
+					<span class="number__head"><span>1</span></span>
+					<p>Вручение дипломов выпускникам программы МВА (Master of Business Administration — мастер делового администрирования) института современного менеджмента.</p>
+				</div>
+				<div class="number">
+					<span class="number__head"><span>2</span></span>
+					<p> Итог программы — защита дипломных проектов, на которой слушатели показали комиссии и одногруппникам идеи оптимизации</p>
+				</div>
+				<div class="number">
+					<span class="number__head"><span>3</span></span>
+					<p>Большая часть группы прошла стажировку в Японии, которая помогла углубить полученные знания. </p>
+					<img src="http://placehold.it/440x290" alt="">
+					<span class="number__title">Алеся Кадакина, директор «AlessioModels»</span>
+					<p>Результатом поездки стало более глубокое понимание инструментов бережливого производства, поэтому большинство дипломных проектов было посвящено именно этой японской технологии. </p>
+				</div>
+				<div class="dialog">
+					<p class="dialog__first">– Что предпринимателям про себя непонятно?</p>
+					<p class="dialog__second">– Так исторически сложилось, что у руля многих компаний России стоят люди с экономическим образованием. Они хорошо понимают бизнес на уровне финансовых моделей, но, к сожалению, далеко не всегда понимают, откуда деньги берутся.</p>
+					<p class="dialog__first">– У вас есть такая сокровенная область знаний, которая занимает вас, но она никогда не пригождалась в играх и работе?</p>
+					<p class="dialog__second">– Я очень хорошо знаю спорт. Причем у нас под спортом понимают обычно футбол и хоккей, но я больше слежу за другими видами спорта. От тяжелой атлетики до сноуборда, например.</p>
+				</div>
+				<div class="ad">
+					<span class="ad__title">Рекламная съёмка:</span>
+					<ul class="list">
+						<li><a href="#">Аудит задачи заказчика</a></li>
+						<li><a href="#">Подготовка исполнителем методов реализации данной задачи</a></li>
+						<li><a href="#">Рекламная фотосъемка</a></li>
+						<li><a href="#">Обработка дизайнером полученных фото</a></li>
+					</ul>
+					<img src="http://placehold.it/440x290" alt="">
+					<h3>Общий номинал</h3>
+					<p>Финансисты региональных администраций и муниципалитетов могут получить сведения о налогоплательщиках. Пока доступ к налоговой тайне имеет лишь ФНС, Таможенная служба и внебюджетные фонды.</p>
+				</div>
+				<div class="audio-player">
+					<audio id="audio-player" src="http://cs4851v4.vk.me/u9190920/audios/eda9b2436070.mp3?extra=B6phYykPA_ulbxgulTicS1Tc5bhXDTICtOku7ahmE_j6p6Xwi5FJfdAYdQqYUVh_YGRx-LwFN5Mxb3O78KmFaFce_O8,130" type="audio/mp3" controls="controls"></audio>
+				</div>
+				<div class="video">
+					<iframe width="100%" height="245" src="http://www.youtube.com/embed/M5p9JO9JgvU" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="share">
+					<span class="share__title">поделиться</span>
+					<a href="#" class="share__link"><i class="is-vk"></i></a>
+					<a href="#" class="share__link"><i class="is-fb"></i></a>
+					<a href="#" class="share__link"><i class="is-twitter"></i></a>
+					<a href="#" class="share__link"><i class="is-od"></i></a>
+				</div>
+				<div class="share">
+					<span class="share__title">комментарии</span>
+					<textarea name="" id="" cols="30" rows="10"></textarea>
+					<input type="submit" class="share__submit" value="Отправить">
+				</div>
+				<div class="comment">
+					<div class="profile">
+						<a href="#" class="profile__avatar"><img src="http://placehold.it/70x70" alt=""></a>
+						<div class="profile__info"><span><span class="profile__name">Жанна Терентьева,</span> 4 апреля 2014 14:30</span></div>
+					</div>
+					<p>Сначала звонили на номер поддержки, там нам ничего вменяемого не сказали, взяли наш номер телефона и (вероятно) не перезвонили. </p>
+					<div class="comment__bottom">
+						<a href="#" class="comment__link"><span>Ответить</span></a>
+						<div class="comment__buttons">
+							<div class="comment__button comment__down">
+								<a href="#"><i></i></a>
+								<span>-3</span>
+							</div>
+							<div class="comment__button comment__up">
+								<a href="#"><i></i></a>
+								<span>1</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="comment comment_mod">
+					<div class="profile">
+						<a href="#" class="profile__avatar"><img src="http://placehold.it/70x70" alt=""></a>
+						<div class="profile__info"><span><span class="profile__name">Kurt_Russelovich,</span> 4 апреля 2014 18:05</span></div>
+					</div>
+					<p>Зависит от типа фотосессии и количество её объектов</p>
+					<div class="comment__bottom">
+						<a href="#" class="comment__link"><span>Ответить</span></a>
+						<div class="comment__buttons">
+							<div class="comment__button comment__down">
+								<a href="#"><i></i></a>
+								<span>-14</span>
+							</div>
+							<div class="comment__button comment__up">
+								<a href="#"><i></i></a>
+								<span>2</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="items">
+				<div class="heading"><span>Новости по теме</span></div>
+				<div class="item">
+					<div class="item__img">
+						<img src="http://placehold.it/200x130" alt="">
+					</div>
+					<div class="item__text">
+						<a href="#" class="item__title">Деловые новости</a>
+						<a href="#" class="item__link">Кредиторы шахты «Зенковская» меняют управляющего</a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item__img">
+						<img src="http://placehold.it/200x130" alt="">
+						<div class="item__btns">
+							<a href="#" class="btn-player btn-vol"><i></i></a>
+							<a href="#" class="btn-player btn-play"><i></i></a>
+						</div>
+					</div>
+					<div class="item__text">
+						<a href="#" class="item__title">Деньги</a>
+						<a href="#" class="item__link">Сбербанк реструктурирует долг компании «Заречная»</a>
+					</div>
+				</div>
+				<div class="item">
+					<div class="item__img">
+						<img src="http://placehold.it/200x130" alt="">
+					</div>
+					<div class="item__text">
+						<a href="#" class="item__title">Точки роста</a>
+						<a href="#" class="item__link">Угольщики и металлурги сократили работников в Кузбассе</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end con -->
+</div>
+<footer class="footer">
+	<a href="#" class="logo_bot"></a>
+	<div class="copyright"><p>© a42.ru, 2007—2014 <br>
+Сайт не является частью зарегистрированного СМИ <br>
+Эл № ФС 77 — 45324</p></div>
+</footer>
+<!-- load scripts -->
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>

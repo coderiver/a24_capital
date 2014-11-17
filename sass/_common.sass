@@ -47,26 +47,181 @@
 // p
 // 	+jpg(bla)
 
-
 body
 	font-family: Arial, sans-serif 
 	font-size: 12px 
 	line-height: 1.4
+	-ms-overflow-y: auto
+	overflow-y: auto
+	width: 480px
+	height: 100%
+	margin: 0
+	&:after
+		content: "" 
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		content: ""
+		background: rgba(0,0,0,.4) 
+		visibility: hidden
+		opacity: 0
+		+tr(opacity .2s) 
+		z-index: 999
+	&.is-moved-projects, &.is-moved-menu
+		height: 100%
+		&:after
+			visibility: visible
+			opacity: 1
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic)
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic)
+=fn
+	font-family: "PT Sans Narrow", Arial, sans-serif 
+=f
+	font-family: "PT Sans", Arial, sans-serif 	
+
++font("pfagoraslabpro-italic", PFAgoraSlabPro-MediumItalic)
+
+=italic
+	font-family: "pfagoraslabpro-italic", Arial, sans-serif
+=georgia
+	font-family: Georgia, Arial, sans-serif 
+h1, h2, h3, h4, h5, h6
+	font-weight: normal
+
+=ttu	
+	text-transform: uppercase
+@font-face
+	font-family: 'fontello'
+	src: url('../font/fontello.eot?95040444')
+	src: url('../font/fontello.eot?95040444#iefix') format('embedded-opentype'), url('../font/fontello.woff?95040444') format('woff'), url('../font/fontello.ttf?95040444') format('truetype'), url('../font/fontello.svg?95040444#fontello') format('svg')
+	font-weight: normal
+	font-style: normal
+
+.icon
+	display: inline-block
+	line-height: 1
+	-webkit-font-smoothing: antialiased
+
+[class^="icon-"]:before, [class*=" icon-"]:before
+	display: inline-block
+	font-family: "fontello"
+	font-style: normal
+	font-weight: normal
+	speak: none
+	
+.icon-facebook:before
+	content: '\e800'
+.icon-odnoklassniki:before
+	content: '\e801'
+.icon-twitter:before
+	content: '\e802'
+.icon-vkontakte:before
+	content: '\e803'
+.icon-search:before
+	content: '\e804'
+.icon-shop:before
+	content: '\e805'
+.icon-bear:before
+	content: '\e807'
+.icon-star:before
+	content: '\e808'
+.icon-theatre:before
+	content: '\e809'
+.icon-bicycle:before
+	content: '\e80a'
+.icon-camera:before
+	content: '\e80b'
+.icon-waves:before
+	content: '\e80c'
+.icon-wtf:before
+	content: '\e80d'
+.icon-check:before
+	content: '\e80e'
+.icon-cinema:before
+	content: '\e80f'
+.icon-cup:before
+	content: '\e810'
+.icon-disco:before
+	content: '\e811'
+.icon-drink:before
+	content: '\e812'
+.icon-drop:before
+	content: '\e813'
+.icon-food:before
+	content: '\e814'
+.icon-graph:before
+	content: '\e815'
+.icon-kids:before
+	content: '\e816'
+.icon-lamp:before
+	content: '\e817'
+.icon-marker:before
+	content: '\e819'
+.icon-music:before
+	content: '\e81a'
+.icon-park:before
+	content: '\e81b'
+.icon-picture:before
+	content: '\e81c'
+.icon-more:before
+	content: '\e81d'
+.icon-down-open:before
+	content: '\e81e'
+.icon-cancel:before
+	content: '\e81f'
 
 
-// common blocks      
+a
+	text-decoration: none
+button
+	background: none 
+
+
+.btn-player
+	width: 25px
+	height: 25px
+	+vertical
+	background: #2d97de
+	display: inline-block
+	vertical-align: top
+	i
+		display: inline-block
+		vertical-align: middle
+	&.btn-vol
+		i
+			+svg(btn-vol, 12, 16)
+	&.btn-play
+		i
+			+svg(btn-play, 13, 15)
 
 
 
+.heading
+	width: 100%
+	height: 50px
+	+vertical
+	background: #2d97de
+	display: inline-block 
+	text-align: left
+	margin-bottom: 10px
+	span
+		+fs(24)
+		line-height: 25px
+		color: #fff
+		+georgia
+		font-weight: bold
+		display: inline-block
+		vertical-align: middle 
+		padding: 0 30px
 
-
-
-
-
-
-
-
-
+.more
+	text-align: center
+	padding-bottom: 80px
+	a
+		+svg(more, 70, 70)
+		display: inline-block
 
 
 
