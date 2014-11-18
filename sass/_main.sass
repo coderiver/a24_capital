@@ -1,6 +1,6 @@
 //wrapper
 .wrapper
-	padding: 74px 0 0 0 
+	padding: 0 0 0 0 
 	left: 0
 	position: relative
 .con
@@ -560,7 +560,7 @@
 		&:before
 			content: ""
 			position: absolute
-			top: 7px
+			top: 10px
 			left: 0
 			width: 10px
 			height: 10px
@@ -736,6 +736,8 @@
 			+fs(18)
 			font-weight: bold 
 			color: #27333a 
+			line-height: 18px
+			height: 18px
 	p
 		+fs(20)
 		line-height: 30px
@@ -899,7 +901,7 @@
 		display: inline-block
 		vertical-align: middle
 		+vertical
-		width: 190px
+		width: 220px
 		text-align: justify
 		+fs(0.1)
 		word-spacing: 0px
@@ -911,8 +913,9 @@
 		+vertical
 		display: inline-block
 		vertical-align: middle
-		width: 81px
+		width: 110px
 		text-align: left
+		float: left
 		a
 			display: inline-block
 			width: 42px
@@ -970,7 +973,7 @@
 	+border-radius(5px)
 	margin-bottom: 40px
 	text-align: left
-.mejs-playpause-button, .mejs-volume-button
+.mejs-playpause-button
 	width: 40px
 	height: 40px
 	+vertical
@@ -978,11 +981,14 @@
 	cursor: pointer
 	display: inline-block 
 	vertical-align: middle
-	margin-right: 20px
+	position: absolute
+	top: 20px
+	left: 20px
 	&:hover
 		background: #2d97de 
 .mejs-mute, .mejs-unmute
 	text-align: left
+	display: none
 .mejs-mute button, .mejs-unmute button
 	margin-left: 9px 
 .mejs-unmute
@@ -1061,8 +1067,30 @@
 	background: none
 
 
-
-
+.audio-volume
+	width: 40px
+	height: 40px
+	margin: 0
+	background-color: #221f1f 
+	position: absolute
+	top: 20px
+	left: 80px
+	i
+		content: "" 
+		position: absolute
+		top: 50%
+		left: 9px
+		margin-top: -10px
+		+svg(sound, 20, 20)
+	&.is-active
+		background-color: #ea4b35 
+		i
+			content: "" 
+			position: absolute
+			top: 50%
+			left: 9px
+			margin-top: -10px
+			+svg(mute, 25, 20) 
 
 
 

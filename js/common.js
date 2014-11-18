@@ -96,4 +96,18 @@ head.ready(function() {
 			});
 		});
 	// end Audio Player
+	// $('.audio-volume').on('click', function() {
+	// 	$(this).parent('.audio-player').find('.ap').prop('muted');
+	// 	$(this).toggleClass('is-active');
+	// });
+	$(".ap").prop('muted', false);
+
+	 $(".audio-volume").click( function (){
+	   if( $(".ap").prop('muted') ) {
+	         $(".ap").prop('muted', false);
+	   } else {
+	     $(".ap").prop('muted', true);
+	   }
+	   $(this).toggleClass('is-active');
+	});
 });
