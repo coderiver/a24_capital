@@ -100,14 +100,22 @@ head.ready(function() {
 	// 	$(this).parent('.audio-player').find('.ap').prop('muted');
 	// 	$(this).toggleClass('is-active');
 	// });
-	$(".ap").prop('muted', false);
+	// $(".ap").prop('muted', false);
 
-	 $(".audio-volume").click( function (){
-	   if( $(".ap").prop('muted') ) {
-	         $(".ap").prop('muted', false);
-	   } else {
-	     $(".ap").prop('muted', true);
-	   }
-	   $(this).toggleClass('is-active');
-	});
+	//  $(".audio-volume").click( function (){
+	//    if( $(".ap").prop('muted') ) {
+	//          $(".ap").prop('muted', false);
+	//    } else {
+	//      $(".ap").prop('muted', true);
+	//    }
+	//    $(this).toggleClass('is-active');
+	// });
+	var audio = document.getElementById('audio-player');
+
+	document.getElementById('mute').addEventListener('click', function (e)
+	{
+	    e = e || window.event;
+	    audio.muted = !audio.muted;
+	    e.preventDefault();
+	}, false);
 });
