@@ -118,7 +118,7 @@ head.ready(function() {
 	    audio.muted = !audio.muted;
 	    e.preventDefault();
 	}, false);
-	 $(".audio-volume").click( function (){
-	   $(this).toggleClass('is-active');
+	$(".audio-volume").click( function (){
+		$(this).toggleClass('is-active');
 	});
 });
