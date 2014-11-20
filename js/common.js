@@ -121,4 +121,7 @@ head.ready(function() {
 	// $(".audio-volume").click( function (){
 	// 	$(this).toggleClass('is-active');
 	// });
+	if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+		 body.addClass('is-ios');
+	}
 });
