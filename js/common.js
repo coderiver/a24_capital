@@ -48,6 +48,12 @@ head.ready(function() {
 		projects.toggleClass('is-open');
 		container.toggleClass('is-moved-projects');
 	});
+	$('.overlay').on('click', function() {
+		$('.js-projects, .js-menu').removeClass('is-open');
+		$('body').removeClass('is-moved-menu');
+		$('body').removeClass('is-moved-projects');
+		$('.js-btn-menu').removeClass('is-active');
+	});
 	// projects accordeon
 	projects_type.on('click', function () {
 		if ($(this).hasClass('is-active')) {
