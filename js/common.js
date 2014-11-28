@@ -24,12 +24,37 @@ head.ready(function() {
 		slider = $('.js-slider'),
 		body = $('body');
 	// menu		
-	btn_menu.on('click', function () {
+	btn_menu.on('click', function (event) {
+		event.stopPropagation();
 		btn_menu.toggleClass('is-active');
 		projects.removeClass('is-open');
 		container.removeClass('is-moved-projects');
 		container.toggleClass('is-moved-menu');
 		menu.toggleClass('is-open');
+		// 
+		if (!body.hasClass('no-scroll')) {
+			var scroll_top = body.scrollTop();
+			body.addClass('no-scroll');
+			body.css('top', -scroll_top);
+		}
+		else {
+			var pos_top = body.position().top,
+					pos_top = -pos_top;
+			body.css('top', 0);
+			body.removeClass('no-scroll');
+			body.scrollTop(pos_top);
+		}
+	});
+	$(document).on('click', function () {
+		if (container.hasClass('is-moved-menu')) {
+			btn_menu.trigger('click');
+		};
+	});
+	menu.on('click', function (event) {
+		event.stopPropagation();
+	});
+	projects.on('click', function (event) {
+		event.stopPropagation();
 	});
 
 	// projects		
