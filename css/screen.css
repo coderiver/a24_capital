@@ -164,8 +164,8 @@ button { background: none; }
 .search__submit:hover { background: #1d7cbb; }
 .search__submit .icon { font-size: 32px; color: white; }
 
-.menu, .projects { position: fixed; top: 74px; left: 0; bottom: 0; background: #f3f3f3; -moz-transition: left 0.4s; -o-transition: left 0.4s; -webkit-transition: left 0.4s; transition: left 0.4s; overflow: auto; -webkit-overflow-scrolling: touch; z-index: 9999; }
-.menu.is-open, .projects.is-open { left: 0; }
+.menu, .projects { position: fixed; top: 74px; left: 0; bottom: 0; background: #f3f3f3; -moz-transition: left 0.4s linear; -o-transition: left 0.4s linear; -webkit-transition: left 0.4s linear; transition: left 0.4s linear; overflow: auto; -webkit-overflow-scrolling: touch; z-index: 9999; }
+.menu.is-open, .projects.is-open { left: 0; height: calc(100% - 74px); }
 
 .menu { width: 310px; left: -100%; }
 .menu__inner { width: 100%; overflow: auto; background: white; padding-bottom: 20px; }

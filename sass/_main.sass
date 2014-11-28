@@ -171,12 +171,13 @@
 	left: 0
 	bottom: 0
 	background: #f3f3f3
-	+tr(left .4s)
+	+tr(left 0.4s linear)
 	overflow: auto
 	-webkit-overflow-scrolling: touch
 	z-index: 9999
 	&.is-open
 		left: 0
+		height: calc(100% - 74px)
 .menu
 	width: 310px
 	left: -100%
