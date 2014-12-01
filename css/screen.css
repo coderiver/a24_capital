@@ -22,12 +22,12 @@ ul, ol { list-style-type: none; }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; -ms-overflow-y: auto; overflow-y: auto; width: 480px; height: 100%; margin: 0; padding-top: 74px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-body:after { content: ""; position: fixed; top: 0; left: 0; right: 0; bottom: 0; content: ""; background: rgba(0, 0, 0, 0.4); visibility: hidden; opacity: 0; -moz-transition: opacity 0.2s; -o-transition: opacity 0.2s; -webkit-transition: opacity 0.2s; transition: opacity 0.2s; z-index: 999; }
+body .overlay { content: ""; position: fixed; top: 0; left: 0; right: 0; bottom: 0; content: ""; background: rgba(0, 0, 0, 0.4); visibility: hidden; opacity: 0; -moz-transition: opacity 0.2s; -o-transition: opacity 0.2s; -webkit-transition: opacity 0.2s; transition: opacity 0.2s; z-index: 999; }
 body.is-moved-projects, body.is-moved-menu { height: 100%; overflow: hidden; }
 body.is-moved-projects .wrapper, body.is-moved-menu .wrapper { overflow: hidden; height: 100%; }
 body.is-moved-projects .con, body.is-moved-menu .con { height: 100%; overflow: hidden; }
 body.is-moved-projects .all-wrapper, body.is-moved-menu .all-wrapper { height: 100%; overflow: hidden; }
-body.is-moved-projects:after, body.is-moved-menu:after { visibility: visible; opacity: 1; }
+body.is-moved-projects .overlay, body.is-moved-menu .overlay { visibility: visible; opacity: 1; }
 
 .all-wrapper { height: 100%; }
 
@@ -164,11 +164,11 @@ button { background: none; }
 .search__submit:hover { background: #1d7cbb; }
 .search__submit .icon { font-size: 32px; color: white; }
 
-.menu, .projects { position: fixed; top: 74px; left: 0; bottom: -72px; background: #f3f3f3; -moz-transition: left 0.4s linear; -o-transition: left 0.4s linear; -webkit-transition: left 0.4s linear; transition: left 0.4s linear; z-index: 9999; padding-bottom: 72px; overflow: hidden; }
+.menu, .projects { position: fixed; top: 74px; left: 0; bottom: -72px; background: #f3f3f3; -moz-transition: left 0.4s linear; -o-transition: left 0.4s linear; -webkit-transition: left 0.4s linear; transition: left 0.4s linear; z-index: 9999; overflow: hidden; }
 .menu.is-open, .projects.is-open { left: 0; }
 
 .menu { width: 310px; left: -100%; background: white; }
-.menu__inner { width: 100%; height: 100%; background: white; padding-bottom: 20px; overflow: auto; -webkit-overflow-scrolling: touch; }
+.menu__inner { width: 100%; height: 100%; background: white; padding-bottom: 94px; overflow: auto; -webkit-overflow-scrolling: touch; }
 .menu .menu__in { background: white; width: 100%; }
 .menu .menu__title { display: block; font-size: 20px; font-family: "PT Sans", Arial, sans-serif; color: #1e1919; margin-bottom: 15px; }
 .menu .menu__list { padding: 10px 0 15px; }
@@ -205,7 +205,7 @@ button { background: none; }
 .menu__made i { display: inline-block; background: url("../img/svg/wow.svg") no-repeat 0 0; -moz-background-size: 51px 14px 100%; -webkit-background-size: 51px 14px 100%; background-size: 51px 14px 100%; width: 51px; height: 14px; display: inline-block; }
 
 .projects { max-width: 480px; width: 100%; left: -100%; }
-.projects__inner { height: 100%; overflow: auto; background: #f3f3f3; padding-bottom: 20px; overflow: auto; -webkit-overflow-scrolling: touch; }
+.projects__inner { height: 100%; overflow: auto; background: #f3f3f3; padding-bottom: 94px; overflow: auto; -webkit-overflow-scrolling: touch; }
 .projects .projects__head { padding: 12px 20px 12px 80px; *zoom: 1; background: white; }
 .projects .projects__head:after { content: " "; display: table; clear: both; }
 @media only screen and (max-width: 440px) { .projects .projects__head { padding-left: 40px; } }
