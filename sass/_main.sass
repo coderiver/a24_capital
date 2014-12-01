@@ -169,12 +169,13 @@
 	position: fixed
 	top: 74px
 	left: 0
-	bottom: 0
+	// bottom: 0
 	background: #f3f3f3
 	+tr(left 0.4s linear)
 	overflow: auto
 	-webkit-overflow-scrolling: touch
-	z-index: 9999
+	z-index: 9998
+	height: calc(100% + 72px) 
 	&.is-open
 		left: 0
 		height: calc(100% - 74px)
