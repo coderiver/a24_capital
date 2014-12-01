@@ -46,9 +46,11 @@ head.ready(function() {
 		}
 	});
 	$(document).on('click', function () {
-		if (container.hasClass('is-moved-menu')) {
-			btn_menu.trigger('click');
-		};
+		projects.removeClass('is-open');
+		container.removeClass('is-moved-projects');
+		container.removeClass('is-moved-menu');
+		menu.removeClass('is-open');
+		btn_menu.removeClass('is-active');
 	});
 	menu.on('click', function (event) {
 		event.stopPropagation();
