@@ -21,10 +21,12 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
+html, body { background: white; }
+
 body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; -ms-overflow-y: auto; overflow-y: auto; width: 480px; height: 100%; margin: 0; padding-top: 74px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 body .overlay { content: ""; position: fixed; top: 0; left: 0; right: 0; bottom: 0; content: ""; background: rgba(0, 0, 0, 0.4); visibility: hidden; opacity: 0; -moz-transition: opacity 0.2s; -o-transition: opacity 0.2s; -webkit-transition: opacity 0.2s; transition: opacity 0.2s; z-index: 999; }
 body.is-moved-projects, body.is-moved-menu { height: 100%; overflow: hidden; }
-body.is-moved-projects .wrapper, body.is-moved-menu .wrapper { overflow: hidden; height: 100%; }
+body.is-moved-projects .wrapper, body.is-moved-menu .wrapper { overflow: hidden; padding-bottom: 74px; background: white; position: relative; top: 0; bottom: -74px; }
 body.is-moved-projects .con, body.is-moved-menu .con { height: 100%; overflow: hidden; }
 body.is-moved-projects .all-wrapper, body.is-moved-menu .all-wrapper { height: 100%; overflow: hidden; }
 body.is-moved-projects .overlay, body.is-moved-menu .overlay { visibility: visible; opacity: 1; }
