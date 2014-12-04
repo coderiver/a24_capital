@@ -175,7 +175,7 @@ button { background: none; }
 .menu .menu__title { display: block; font-size: 20px; font-family: "PT Sans", Arial, sans-serif; color: #1e1919; margin-bottom: 15px; }
 .menu .menu__list { padding: 10px 0 15px; }
 .menu .menu__list li { position: relative; width: 100%; }
-.menu .menu__list a { font-size: 24px; font-family: Georgia, Arial, sans-serif; line-height: 60px; color: black; display: block; padding: 0 20px; }
+.menu .menu__list a { font-size: 24px; font-family: Georgia, Arial, sans-serif; line-height: 60px; color: black; display: block; padding: 0 20px; -webkit-tap-highlight-color: transparent; }
 .menu .menu__list_mod { padding-bottom: 5px; }
 .menu .menu__list_mod li { padding: 5px 0; }
 .menu .menu__list_mod a { font-size: 20px; line-height: 60px; }
@@ -197,7 +197,7 @@ button { background: none; }
 .menu__link i.is-fb { background: url("../img/svg/fb-hov.svg") no-repeat 0 0; -moz-background-size: 11px 23px 100%; -webkit-background-size: 11px 23px 100%; background-size: 11px 23px 100%; width: 11px; height: 23px; display: inline-block; background-size: cover; }
 .menu__link i.is-twitter { background: url("../img/svg/twitter-hov.svg") no-repeat 0 0; -moz-background-size: 22px 19px 100%; -webkit-background-size: 22px 19px 100%; background-size: 22px 19px 100%; width: 22px; height: 19px; display: inline-block; background-size: cover; }
 .menu__link i.is-od { background: url("../img/svg/od-hov.svg") no-repeat 0 0; -moz-background-size: 15px 22px 100%; -webkit-background-size: 15px 22px 100%; background-size: 15px 22px 100%; width: 15px; height: 22px; display: inline-block; background-size: cover; }
-.menu__link:hover { background: url("../img/svg/soc-bg-hov.svg") no-repeat 0 0; -moz-background-size: 58px 65px 100%; -webkit-background-size: 58px 65px 100%; background-size: 58px 65px 100%; width: 58px; height: 65px; display: inline-block; }
+.menu__link:hover, .menu__link:active { background: url("../img/svg/soc-bg-hov.svg") no-repeat 0 0; -moz-background-size: 58px 65px 100%; -webkit-background-size: 58px 65px 100%; background-size: 58px 65px 100%; width: 58px; height: 65px; display: inline-block; }
 .menu__footer { padding: 0 20px; }
 .menu__copy { font-size: 16px; color: #727272; line-height: 25px; position: relative; margin: 2px; margin-left: -15px; }
 .menu__copy:before { float: left; content: "©"; font-size: 14px; margin-right: 5px; }

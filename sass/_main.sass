@@ -209,6 +209,7 @@
 			color: #000000
 			display: block
 			padding: 0 20px 
+			-webkit-tap-highlight-color: transparent
 			// &:hover
 			// 	background: #221f1f
 			// 	color: #ffffff  
@@ -285,7 +286,7 @@
 			&.is-od
 				+svg(od-hov, 15, 22)
 				background-size: cover
-		&:hover
+		&:hover, &:active
 			+svg(soc-bg-hov, 58, 65)
 	&__footer
 		padding: 0 20px
