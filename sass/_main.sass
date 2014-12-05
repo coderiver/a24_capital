@@ -168,15 +168,13 @@
 .menu, .projects
 	position: fixed
 	top: 74px
-	left: 0
-	bottom: -72px
+	bottom: -74px
 	background: #f3f3f3
-	+tr(left 0.4s linear)
-	z-index: 9999
-	// padding-bottom: 72px
+	+tr(left .4s)
 	overflow: hidden
+	-webkit-overflow-scrolling: touch
 	&.is-open
-		left: 1px !important
+		left: 1px
 .menu
 	width: 296px
 	left: -100%
@@ -315,8 +313,8 @@
 .projects
 	max-width: 480px
 	width: 100%
-	// +transform(translateX(-480px))
 	left: -100%
+	background: #f3f3f3
 	&__inner
 		height: 100%
 		overflow: auto

@@ -60,13 +60,6 @@ head.ready(function() {
 		menu.removeClass('is-open');
 		btn_menu.removeClass('is-active');
 	});
-	// menu.on('click', function (event) {
-	// 	event.stopPropagation();
-	// });
-	// projects.on('click', function (event) {
-	// 	event.stopPropagation();
-	// });
-
 	// projects		
 	btn_projects.on('click', function () {
 		btn_projects.toggleClass('is-active');
@@ -136,11 +129,6 @@ head.ready(function() {
 				audioHeight: 40
 			});
 		});
-	// end Audio Player
-	// $('.audio-volume').on('click', function() {
-	// 	$(this).parent('.audio-player').find('.ap').prop('muted');
-	// 	$(this).toggleClass('is-active');
-	// });
 	$(".ap").prop('muted', false);
 
 	 $(".audio-volume").click( function (){
@@ -151,17 +139,6 @@ head.ready(function() {
 	   }
 	   $(this).toggleClass('is-active');
 	});
-	// var audio = document.getElementById('audio-player');
-
-	// document.getElementById('mute').addEventListener('click', function (e)
-	// {
-	//     e = e || window.event;
-	//     audio.muted = !audio.muted;
-	//     e.preventDefault();
-	// }, false);
-	// $(".audio-volume").click( function (){
-	// 	$(this).toggleClass('is-active');
-	// });
 	if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
 		 body.addClass('is-ios');
 	}
