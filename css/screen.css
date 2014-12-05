@@ -166,7 +166,7 @@ button { background: none; }
 .search__submit:hover { background: #1d7cbb; }
 .search__submit .icon { font-size: 32px; color: white; }
 
-.menu, .projects { position: fixed; top: 74px; bottom: -74px; background: #f3f3f3; -moz-transition: left 0.4s; -o-transition: left 0.4s; -webkit-transition: left 0.4s; transition: left 0.4s; overflow: hidden; -webkit-overflow-scrolling: touch; }
+.menu, .projects { position: fixed; top: 74px; bottom: -74px; background: #f3f3f3; -moz-transition: left 0.4s; -o-transition: left 0.4s; -webkit-transition: left 0.4s; transition: left 0.4s; overflow: hidden; z-index: 9999; -webkit-overflow-scrolling: touch; }
 .menu.is-open, .projects.is-open { left: 1px; }
 
 .menu { width: 296px; left: -100%; background: white; }
