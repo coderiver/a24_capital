@@ -165,4 +165,11 @@ head.ready(function() {
 	if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
 		 body.addClass('is-ios');
 	}
+	window.addEventListener("orientationchange", function() {
+		$('.menu').removeClass('is-open');
+		$('.projects').removeClass('is-open');
+		btn_menu.removeClass('is-active');
+		container.removeClass('is-moved-projects');
+		container.removeClass('is-moved-menu');
+	}, false);
 });
