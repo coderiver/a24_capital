@@ -209,16 +209,13 @@ button { background: none; }
 .projects__inner { height: 100%; overflow: auto; background: #f3f3f3; padding-bottom: 94px; overflow: auto; -webkit-overflow-scrolling: touch; }
 .projects .projects__head { padding: 12px 20px 12px 80px; *zoom: 1; background: white; }
 .projects .projects__head:after { content: " "; display: table; clear: both; }
-@media only screen and (max-width: 440px) { .projects .projects__head { padding-left: 40px; } }
 .projects .projects__title { float: left; font-size: 35px; font-family: "PT Sans Narrow", Arial, sans-serif; font-size: 35px; color: #00c7ff; }
 .projects .projects__close { float: right; margin-top: 11px; font-size: 0; }
 .projects .projects__close .icon { font-size: 22px; color: #d7d7d7; }
 .projects .projects__type { position: relative; padding: 7px 10px 7px 80px; color: white; font-size: 35px; cursor: pointer; background: #00c7ff; font-family: "PT Sans Narrow", Arial, sans-serif; }
-@media only screen and (max-width: 440px) { .projects .projects__type { padding-left: 40px; } }
 .projects .projects__type.is-active { background: black; }
 .projects .projects__type.is-active .icon { top: 12px; -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
 .projects .projects__type .icon { position: absolute; top: 15px; left: 40px; font-size: 30px; }
-@media only screen and (max-width: 440px) { .projects .projects__type .icon { left: 10px; } }
 .projects .projects__list { display: none; padding: 0 20px; background: white; }
 .projects .projects__list li { border-top: 1px solid #d7d7d7; }
 .projects .projects__list li:first-child { border: none; }
