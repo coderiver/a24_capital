@@ -123,6 +123,8 @@ button { background: none; }
 .l .l-col1 { float: left; width: 20%; }
 .l .l-col2 { float: right; width: 70%; }
 
+* { -moz-text-size-adjust: none; -webkit-text-size-adjust: none; text-size-adjust: none; }
+
 .wrapper { padding: 0 0 0 0; left: 0; position: relative; }
 
 .con { margin: 0 auto; width: 480px; -moz-transition: -moz-transform 0.4s; -o-transition: -o-transform 0.4s; -webkit-transition: -webkit-transform 0.4s; transition: transform 0.4s; -moz-transform: translateX(0px) translate3d(0, 0, 0); -ms-transform: translateX(0px) translate3d(0, 0, 0); -webkit-transform: translateX(0px) translate3d(0, 0, 0); transform: translateX(0px) translate3d(0, 0, 0); }
