@@ -324,7 +324,7 @@
 .menu__wrapper
 	background: #fff 
 .projects
-	max-width: 480px
+	max-width: 310px
 	width: 100%
 	left: -100%
 	background: #f3f3f3
@@ -336,7 +336,8 @@
 		overflow: auto
 		-webkit-overflow-scrolling: touch
 	.projects__head
-		padding: 12px 20px 12px 80px
+		// padding: 12px 20px 12px 80px
+		padding: 12px 20px 12px 30px
 		+clr
 		background: #fff 
 	.projects__title
@@ -354,7 +355,8 @@
 			color: #D7D7D7 
 	.projects__type
 		position: relative
-		padding: 7px 10px 7px 80px
+		// padding: 7px 10px 7px 80px
+		padding: 7px 10px 7px 40px
 		color: #FFF
 		font-size: 35px	
 		cursor: pointer
@@ -363,12 +365,16 @@
 		&.is-active
 			background: #000 
 			.icon
-				top: 12px
+				top: 50%
 				+rotate(180)
+				margin-top: -16px 
 		.icon
 			position: absolute
-			top: 15px
-			left: 40px
+			// top: 15px
+			// left: 40px
+			top: 50%
+			margin-top: -15px
+			left: 10px
 			font-size: 30px
 	.projects__list
 		display: none
@@ -381,7 +387,8 @@
 		a
 			display: block
 			margin: 0 -20px
-			padding: 17px 20px 17px 80px
+			// padding: 17px 20px 17px 80px
+			padding: 17px 20px 17px 40px
 			font-size: 20px
 			font-weight: 700 
 			+f
@@ -1122,7 +1129,14 @@ body
 			display: none
 
 
-
+.is-ff
+	.menu, .projects
+		left: auto
+		right: 100%
+		+transition(right .4s, left .4s)
+		&.is-open
+			left: 1px
+			right: auto
 
 
 
